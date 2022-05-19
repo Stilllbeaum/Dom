@@ -55,10 +55,10 @@ document.getElementById('ok').addEventListener( 'click', function(e){
     document.getElementById('no').style.marginLeft=`${borderTick}px`;
 })*/
 const text = ["ok", "วิชานี้", "ง่าย", "จริงๆนะ"];
-let i=0
+let i=0;
 document.getElementById('no').addEventListener( 'dblclick', function(e){
     document.getElementById('ok').innerText=text[i]
-    if(i>2){
+    if(text>=text.length){
         i=0
     }else{
         i++
